@@ -8,7 +8,7 @@ function Skills() {
         <section id="skills" className={styles.container}>
             <div>
                 <h2>Languages</h2>
-                <ul className="languageList">
+                <ul className={styles.languageList}>
                     {languages.map((lang, index) => (
                         <li key={index}>{lang}</li>
                     ))}
@@ -17,7 +17,7 @@ function Skills() {
 
             <div>
                 <h2>Tools</h2>
-                <ul className="toolsList">
+                <ul className={styles.toolsList}>
                     {tools.map((tool, index) => (
                         <li key={index}>{tool}</li>
                     ))}

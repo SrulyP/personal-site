@@ -8,12 +8,12 @@ import resumeIcon from '../../assets/resume.svg';
 function Contact() {
     return (
         <section id="contact" className={styles.container}>
-            <h1 className="sectionTitle">Contact</h1>
+            <h1 className={styles.sectionTitle}>Contact</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
                 quia?
             </p>
-            <div className="socials">
+            <div className={styles.socials}>
                 <a
                     href="https://www.linkedin.com/in/israelpolasak/"
                     target="_blank"
@@ -37,7 +37,7 @@ function Contact() {
 
             <p>Leave Message</p>
             <form action="">
-                <div className="formRow">
+                <div className={styles.formRow}>
                     <label htmlFor="name" hidden>
                         Name
                     </label>
@@ -49,7 +49,7 @@ function Contact() {
                         required
                     />
                 </div>
-                <div className="formRow">
+                <div className={styles.formRow}>
                     <label htmlFor="email" hidden>
                         Email
                     </label>
@@ -61,7 +61,7 @@ function Contact() {
                         required
                     />
                 </div>
-                <div className="formRow">
+                <div className={styles.formRow}>
                     <label htmlFor="subject" hidden>
                         Subject
                     </label>
@@ -73,7 +73,7 @@ function Contact() {
                         required
                     />
                 </div>
-                <div className="formRow">
+                <div className={styles.formRow}>
                     <label htmlFor="message" hidden>
                         Message
                     </label>
