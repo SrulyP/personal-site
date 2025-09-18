@@ -1,9 +1,9 @@
-import ProjectCard from '../../common/ProjectCard';
-import styles from './ProjectsStyles.modules.css';
+import styles from './ProjectsStyles.module.css';
 import battlefield from '../../assets/battlefield.png';
 import weather from '../../assets/weather.png';
 import todo from '../../assets/todo.png';
 import library from '../../assets/library.png';
+import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
     return (
