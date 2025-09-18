@@ -3,7 +3,7 @@ import heroImg from '../../assets/heroImg.jpg';
 
 function Hero() {
     return (
-        <section id="hero" className={styles.container}>
+        <section id="hero" className={styles.heroSection}>
             <div className={styles.info}>
                 <img
                     src={heroImg}

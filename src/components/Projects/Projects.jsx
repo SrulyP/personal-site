@@ -7,7 +7,7 @@ import ProjectCard from '../../common/ProjectCard';
 
 function Projects() {
     return (
-        <section id="projects" className={styles.projectsContainer}>
+        <section id="projects" className={styles.projectsSection}>
             <ProjectCard
                 src={battlefield}
                 link="https://github.com/SrulyP/battleship"

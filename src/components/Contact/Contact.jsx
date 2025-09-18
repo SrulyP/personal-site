@@ -7,7 +7,7 @@ import resumeIcon from '../../assets/resume.svg';
 
 function Contact() {
     return (
-        <section id="contact" className={styles.container}>
+        <section id="contact" className={styles.contactSection}>
             <h1 className={styles.sectionTitle}>Contact</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,

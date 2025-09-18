@@ -2,7 +2,7 @@ import styles from './HeaderStyles.module.css';
 
 function Header() {
     return (
-        <section>
+        <section className={styles.headerSection}>
             <p>Israel</p>
             <div className={styles.links}>
                 <a href="#projects">Projects</a>

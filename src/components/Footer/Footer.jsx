@@ -2,7 +2,7 @@ import styles from './FooterStyles.module.css';
 
 function Footer() {
     return (
-        <section>
+        <section className={styles.footerSection}>
             <div className={styles.inTouch}>
                 <a>Email</a>
                 <a>LinkedIn</a>

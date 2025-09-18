@@ -5,7 +5,7 @@ function Skills() {
     const tools = ['React', 'Flask', 'HTML', 'CSS', 'Git', 'Github'];
 
     return (
-        <section id="skills" className={styles.container}>
+        <section id="skills" className={styles.skillsSection}>
             <div>
                 <h2>Languages</h2>
                 <ul className={styles.languageList}>
