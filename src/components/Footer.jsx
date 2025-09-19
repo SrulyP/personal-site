@@ -1,15 +1,15 @@
-import styles from './FooterStyles.module.css';
+import '../App.css';
 
 function Footer() {
     return (
-        <section className={styles.footerSection}>
-            <div className={styles.inTouch}>
+        <section className="footerSection">
+            <div className="inTouch">
                 <a>Email</a>
                 <a>LinkedIn</a>
                 <a>Github</a>
                 <a>Resume</a>
             </div>
-            <div className={styles.copyright}>
+            <div className="copyright">
                 &copy; Israel Polasak {new Date().getFullYear()} All rights
                 reserved.
             </div>

@@ -1,13 +1,13 @@
-import styles from './ProjectsStyles.module.css';
-import battlefield from '../../assets/battlefield.png';
-import weather from '../../assets/weather.png';
-import todo from '../../assets/todo.png';
-import library from '../../assets/library.png';
-import ProjectCard from '../../common/ProjectCard';
+import '../App.css';
+import battlefield from '../assets/battlefield.png';
+import weather from '../assets/weather.png';
+import todo from '../assets/todo.png';
+import library from '../assets/library.png';
+import ProjectCard from '../common/ProjectCard';
 
 function Projects() {
     return (
-        <section id="projects" className={styles.projectsSection}>
+        <section id="projects" className="projectsSection">
             <ProjectCard
                 src={battlefield}
                 link="https://github.com/SrulyP/battleship"

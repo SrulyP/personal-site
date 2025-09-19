@@ -1,10 +1,10 @@
-import styles from './HeaderStyles.module.css';
+import '../App.css';
 
 function Header() {
     return (
-        <section className={styles.headerSection}>
+        <section className="headerSection">
             <p>Israel</p>
-            <div className={styles.links}>
+            <div className="links">
                 <a href="#projects">Projects</a>
                 <a href="#contact">Contact</a>
             </div>

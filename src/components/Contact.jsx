@@ -1,19 +1,19 @@
-import styles from './ContactStyles.module.css';
-import resume from '../../assets/resume.pdf';
-import githubIcon from '../../assets/github.svg';
-import linkedinIcon from '../../assets/linkedin.svg';
-import emailIcon from '../../assets/email.svg';
-import resumeIcon from '../../assets/resume.svg';
+import '../App.css';
+import resume from '../assets/resume.pdf';
+import githubIcon from '../assets/github.svg';
+import linkedinIcon from '../assets/linkedin.svg';
+import emailIcon from '../assets/email.svg';
+import resumeIcon from '../assets/resume.svg';
 
 function Contact() {
     return (
-        <section id="contact" className={styles.contactSection}>
-            <h1 className={styles.sectionTitle}>Contact</h1>
+        <section id="contact" className="contactSection">
+            <h1 className="sectionTitle">Contact</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
                 quia?
             </p>
-            <div className={styles.socials}>
+            <div className="socials">
                 <a
                     href="https://www.linkedin.com/in/israelpolasak/"
                     target="_blank"
@@ -37,7 +37,7 @@ function Contact() {
 
             <p>Leave Message</p>
             <form action="">
-                <div className={styles.formRow}>
+                <div className="formRow">
                     <label htmlFor="name" hidden>
                         Name
                     </label>
@@ -49,7 +49,7 @@ function Contact() {
                         required
                     />
                 </div>
-                <div className={styles.formRow}>
+                <div className="formRow">
                     <label htmlFor="email" hidden>
                         Email
                     </label>
@@ -61,7 +61,7 @@ function Contact() {
                         required
                     />
                 </div>
-                <div className={styles.formRow}>
+                <div className="formRow">
                     <label htmlFor="subject" hidden>
                         Subject
                     </label>
@@ -73,7 +73,7 @@ function Contact() {
                         required
                     />
                 </div>
-                <div className={styles.formRow}>
+                <div className="formRow">
                     <label htmlFor="message" hidden>
                         Message
                     </label>
