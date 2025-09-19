@@ -1,0 +1,80 @@
+:root {
+  --light-yellow: #fff4c6;
+  --dark-yellow: #ffdf5d;
+  --button-shadow: #938d74;
+  --text-color: #242424;
+  --active-text:rgb(134, 137, 90);
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  background-color: var(--light-yellow);
+  margin: 0;
+  padding: 0;
+}
+
+/*  
+==================================================
+                    HEADER
+==================================================
+ */
+
+.headerSection {
+  background-color: var(--dark-yellow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 50px;
+  border-bottom: solid 2px white;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+}
+
+.headerSection a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 450;
+    color: var(--text-color);
+    display: inline-block;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.headerSection a:hover {
+    text-decoration: underline;
+    text-underline-offset: 1.65rem;
+    text-decoration-thickness: 2px;
+    color: var(--text-color);
+    transform: scale(1.08); 
+    font-weight: 550;  
+}
+
+.headerSection a:active {
+    color: var(--active-text);
+}
+
+
+.headerSection p {
+    font-size: 1.2rem;
+    font-weight: 550;
+    color: var(--text-color);
+}
+
+img {
+  height: 200px;
+  width: auto;
+}
+
+
+/*  
+==================================================
+                    HERO
+==================================================
+ */
+
