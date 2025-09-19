@@ -2,12 +2,12 @@
   --light-yellow: #fff4c6;
   --dark-yellow: #ffdf5d;
   --button-shadow: #938d74;
-  --text-color: #242424;
-  --active-text:rgb(134, 137, 90);
+  --text-color: #272622;
+  --active-text: rgb(134, 137, 90);
 }
 
 * {
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 html,
@@ -30,6 +30,7 @@ body {
   align-items: center;
   padding: 5px 50px;
   border-bottom: solid 2px white;
+  margin-bottom: 100px;
 }
 
 .links {
@@ -38,39 +39,37 @@ body {
 }
 
 .headerSection a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 450;
-    color: var(--text-color);
-    display: inline-block;
-    transition: transform 0.2s, color 0.2s;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 450;
+  color: var(--text-color);
+  display: inline-block;
+  transition: transform 0.2s, color 0.2s;
 }
 
 .headerSection a:hover {
-    text-decoration: underline;
-    text-underline-offset: 1.65rem;
-    text-decoration-thickness: 2px;
-    color: var(--text-color);
-    transform: scale(1.08); 
-    font-weight: 550;  
+  text-decoration: underline;
+  text-underline-offset: 1.65rem;
+  text-decoration-thickness: 2px;
+  color: var(--text-color);
+  transform: scale(1.08);
+  font-weight: 550;
 }
 
 .headerSection a:active {
-    color: var(--active-text);
+  color: var(--active-text);
 }
 
-
 .headerSection p {
-    font-size: 1.2rem;
-    font-weight: 550;
-    color: var(--text-color);
+  font-size: 1.2rem;
+  font-weight: 550;
+  color: var(--text-color);
 }
 
 img {
-  height: 200px;
+  max-height: 400px;
   width: auto;
 }
-
 
 /*  
 ==================================================
@@ -78,3 +77,47 @@ img {
 ==================================================
  */
 
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-left: 200px;
+  padding-right: 200px;
+  color: var(--text-color);
+}
+
+.hero {
+  border-radius: 25px;
+  max-height: 250px;
+}
+
+.introduction {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.heroSection h1 {
+  margin: 0;
+  padding: 0;
+  font-weight: 650;
+  font-size: 2rem;
+}
+
+.description {
+  line-height: 2rem;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  font-weight: 400;
+}
+
+.aboutMeDescription {
+  line-height: 2rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+.aboutMe h2 {
+  margin: 0;
+}
