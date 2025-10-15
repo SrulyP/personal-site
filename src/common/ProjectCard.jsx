@@ -1,6 +1,6 @@
-function ProjectCard({ src, link, projectTitle, projectDesc }) {
+function ProjectCard({ src, link, projectTitle, projectDesc, technologies }) {
     return (
-        <div>
+        <div className="projectCard">
             <a href={link} target="_blank" rel="noopener noreferrer">
                 <img
                     className="projectImg"
@@ -8,11 +8,16 @@ function ProjectCard({ src, link, projectTitle, projectDesc }) {
                     alt={`${projectTitle} project image`}
                 />
             </a>
-            <div>
-                <a href={link} target="_blank" rel="noopener noreferrer">
-                    {projectTitle}
-                </a>
-                <p>{projectDesc}</p>
+            <div className="projectContent">
+                <h3 className="projectTitle">{projectTitle}</h3>
+                <p className="projectDesc">{projectDesc}</p>
+                <div className="projectTechnologies">
+                    {technologies.map((tech, index) => (
+                        <span key={index} className="techTag">
+                            {tech}
+                        </span>
+                    ))}
+                </div>
             </div>
         </div>
     );
