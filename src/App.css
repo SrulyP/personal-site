@@ -121,3 +121,89 @@ img {
 .aboutMe h2 {
   margin: 0;
 }
+
+/*  
+==================================================
+                    Skills
+==================================================
+ */
+
+.skillsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  color: var(--text-color);
+}
+
+/*  
+==================================================
+                    Projects
+==================================================
+ */
+
+.projectsSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 200px;
+  padding-right: 200px;
+  color: var(--text-color);
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-bottom: 60px;
+  align-items: flex-start;
+}
+
+.projectImg {
+  width: 310px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 15px;
+  background-color: #c5c9d8;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.projectImg:hover {
+  transform: scale(1.02);
+}
+
+.projectContent {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  flex: 1;
+}
+
+.projectTitle {
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.projectDesc {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin: 0;
+  color: var(--text-color);
+}
+
+.projectTechnologies {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 5px;
+}
+
+.techTag {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
