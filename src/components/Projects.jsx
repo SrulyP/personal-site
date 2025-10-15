@@ -8,49 +8,34 @@ import ProjectCard from '../common/ProjectCard';
 function Projects() {
     return (
         <section id="projects" className="projectsSection">
+            <h2>My Projects</h2>
             <ProjectCard
                 src={battlefield}
                 link="https://github.com/SrulyP/battleship"
                 projectTitle="Battlefield"
-                projectDesc="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quasi ab, expedita deleniti eveniet assumenda eos voluptatem
-                    asperiores harum soluta vel similique suscipit repellendus
-                    error minus facilis veritatis placeat nihil culpa
-                    dignissimos architecto enim delectus odit esse. Hic vel
-                    similique debitis."
+                projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+                technologies={['JavaScript', 'HTML', 'CSS']}
             />
             <ProjectCard
                 src={weather}
                 link="https://github.com/SrulyP/weather-app"
                 projectTitle="Weather App"
-                projectDesc="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quasi ab, expedita deleniti eveniet assumenda eos voluptatem
-                    asperiores harum soluta vel similique suscipit repellendus
-                    error minus facilis veritatis placeat nihil culpa
-                    dignissimos architecto enim delectus odit esse. Hic vel
-                    similique debitis."
+                projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+                technologies={['JavaScript', 'HTML', 'CSS', 'API']}
             />
             <ProjectCard
                 src={todo}
                 link="https://github.com/SrulyP/to-do-list"
                 projectTitle="To-Do App"
-                projectDesc="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quasi ab, expedita deleniti eveniet assumenda eos voluptatem
-                    asperiores harum soluta vel similique suscipit repellendus
-                    error minus facilis veritatis placeat nihil culpa
-                    dignissimos architecto enim delectus odit esse. Hic vel
-                    similique debitis."
+                projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+                technologies={['JavaScript', 'HTML', 'CSS']}
             />
             <ProjectCard
                 src={library}
                 link="https://github.com/SrulyP/library-project"
                 projectTitle="Library App"
-                projectDesc="Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Quasi ab, expedita deleniti eveniet assumenda eos voluptatem
-                    asperiores harum soluta vel similique suscipit repellendus
-                    error minus facilis veritatis placeat nihil culpa
-                    dignissimos architecto enim delectus odit esse. Hic vel
-                    similique debitis."
+                projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+                technologies={['JavaScript', 'HTML', 'CSS']}
             />
         </section>
     );
