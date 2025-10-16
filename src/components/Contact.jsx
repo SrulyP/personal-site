@@ -8,84 +8,74 @@ import resumeIcon from '../assets/resume.svg';
 function Contact() {
     return (
         <section id="contact" className="contactSection">
-            <h1 className="sectionTitle">Contact</h1>
+            <h2>Contact</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
                 quia?
             </p>
-            <div className="socials">
-                <a
-                    href="https://www.linkedin.com/in/israelpolasak/"
-                    target="_blank"
-                >
+
+            <h3 className="contactSubtitle">Lorem Ipsum</h3>
+            <p className="contactDescription">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                eiusmod tempor incidididunt ut labore et dolore magna
+            </p>
+
+            <div className="contactLinks">
+                <div className="linkItem">
                     <img src={linkedinIcon} alt="linkedin icon" />
-                    <span>linkedin.com/in/israelpolasak</span>
-                </a>
-                <a href="https://github.com/SrulyP" target="_blank">
+                    <span>linkedin.com/israelpolasak</span>
+                </div>
+                <div className="linkItem">
                     <img src={githubIcon} alt="github icon" />
                     <span>github.com/SrulyP</span>
-                </a>
-                <a href="mailto:israelpolasak@gmail.com">
+                </div>
+                <div className="linkItem">
                     <img src={emailIcon} alt="email icon" />
                     <span>israelpolasak@gmail.com</span>
-                </a>
-                <a href={resume}>
+                </div>
+                <div className="linkItem">
                     <img src={resumeIcon} alt="resume icon" />
-                    <button>Resume</button>
-                </a>
+                    <span>Resume</span>
+                </div>
             </div>
 
-            <p>Leave Message</p>
-            <form action="">
-                <div className="formRow">
-                    <label htmlFor="name" hidden>
-                        Name
-                    </label>
+            <h3 className="leaveMessageTitle">Leave Message</h3>
+            <div className="contactForm">
+                <div className="formRowShort">
                     <input
                         type="text"
                         name="name"
                         id="name"
-                        placeholder="Name"
+                        placeholder="Name:"
                         required
                     />
-                </div>
-                <div className="formRow">
-                    <label htmlFor="email" hidden>
-                        Email
-                    </label>
                     <input
-                        type="text"
+                        type="email"
                         name="email"
                         id="email"
-                        placeholder="Email"
+                        placeholder="Email:"
                         required
                     />
                 </div>
-                <div className="formRow">
-                    <label htmlFor="subject" hidden>
-                        Subject
-                    </label>
+                <div className="formRowLong">
                     <input
                         type="text"
                         name="subject"
                         id="subject"
-                        placeholder="Subject"
+                        placeholder="Subject:"
                         required
                     />
                 </div>
-                <div className="formRow">
-                    <label htmlFor="message" hidden>
-                        Message
-                    </label>
+                <div className="formRowLong">
                     <textarea
                         name="message"
                         id="message"
-                        placeholder="Message"
+                        placeholder="Message:"
                         required
                     ></textarea>
                 </div>
-                <input type="submit" value="Submit" />
-            </form>
+                <button className="submitBtn">Send</button>
+            </div>
         </section>
     );
 }
