@@ -279,6 +279,12 @@ section h2 {
   gap: 12px;
   font-size: 1rem;
   font-weight: 500;
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+.linkItem:hover {
+  color: var(--active-text);
 }
 
 .linkItem img {
