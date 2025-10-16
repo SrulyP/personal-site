@@ -125,7 +125,8 @@ img {
  */
 
 .skillsSection,
-.projectsSection {
+.projectsSection,
+.contactSection {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -238,4 +239,115 @@ section h2 {
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--text-color);
+}
+/*  
+==================================================
+                    CONTACT
+==================================================
+*/
+
+
+.contactSection p {
+  font-size: 1rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.contactSubtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.contactDescription {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 1.5rem;
+  max-width: 600px;
+}
+
+.contactLinks {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  row-gap: 1rem;
+  column-gap: 2.5rem;
+  align-items: center;
+}
+
+.linkItem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.linkItem img {
+  width: 28px;
+  height: 28px;
+}
+
+/* Leave Message section */
+.leaveMessageTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 0.7rem;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.formRowShort {
+  display: flex;
+  gap: 1rem;
+}
+
+.formRowShort input,
+.formRowLong input,
+.formRowLong textarea {
+  background-color: #f1e3ac;
+  border: 2px solid #bdae6a;
+  border-radius: 12px;
+  padding: 15px 18px;
+  font-size: 1rem;
+  color: #272622;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.formRowLong input {
+  height: 50px;
+}
+
+textarea {
+  min-height: 200px;
+  resize: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #8c8156;
+}
+
+.submitBtn {
+  background-color: #ffdf5d;
+  color: #272622;
+  border: none;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 12px 35px;
+  align-self: flex-end;
+  cursor: pointer;
+  box-shadow: 0 3px #938d74;
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.submitBtn:active {
+  transform: translateY(3px);
+  box-shadow: none;
 }
