@@ -21,22 +21,30 @@ function Contact() {
             </p>
 
             <div className="contactLinks">
-                <div className="linkItem">
+                <a
+                    className="linkItem"
+                    href="https://www.linkedin.com/in/israelpolasak/"
+                    target="_blank"
+                >
                     <img src={linkedinIcon} alt="linkedin icon" />
                     <span>linkedin.com/israelpolasak</span>
-                </div>
-                <div className="linkItem">
+                </a>
+                <a
+                    className="linkItem"
+                    href="https://github.com/SrulyP"
+                    target="_blank"
+                >
                     <img src={githubIcon} alt="github icon" />
                     <span>github.com/SrulyP</span>
-                </div>
-                <div className="linkItem">
+                </a>
+                <a className="linkItem" href="mailto:israelpolasak@gmail.com">
                     <img src={emailIcon} alt="email icon" />
                     <span>israelpolasak@gmail.com</span>
-                </div>
-                <div className="linkItem">
+                </a>
+                <a className="linkItem" href={resume}>
                     <img src={resumeIcon} alt="resume icon" />
                     <span>Resume</span>
-                </div>
+                </a>
             </div>
 
             <h3 className="leaveMessageTitle">Leave Message</h3>
