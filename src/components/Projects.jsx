@@ -4,6 +4,7 @@ import weather from '../assets/weather.png';
 import todo from '../assets/todo.png';
 import library from '../assets/library.png';
 import thisSite from '../assets/thisSite.png';
+import smallsh from '../assets/smallsh.png';
 import ProjectCard from '../common/ProjectCard';
 
 function Projects() {
@@ -16,6 +17,13 @@ function Projects() {
                 projectTitle="Personal Site"
                 projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
                 technologies={['React', 'Vite', 'JSX', 'CSS']}
+            />
+            <ProjectCard
+                src={smallsh}
+                link="https://github.com/SrulyP/smallsh"
+                projectTitle="Smallsh"
+                projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+                technologies={['C', 'Linux', 'System Programming']}
             />
             <ProjectCard
                 src={battlefield}
