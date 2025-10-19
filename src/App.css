@@ -392,7 +392,10 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  border-radius: 25px;
+  border-top-right-radius: 40px;
+  border-top-left-radius: 40px;
+  border: 2px solid white;
+  border-bottom: none;
 }
 
 .inTouch {
