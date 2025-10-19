@@ -9,7 +9,14 @@ function ProjectCard({ src, link, projectTitle, projectDesc, technologies }) {
                 />
             </a>
             <div className="projectContent">
-                <h3 className="projectTitle">{projectTitle}</h3>
+                <a
+                    className="projectTitle"
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {projectTitle}
+                </a>
                 <p className="projectDesc">{projectDesc}</p>
                 <div className="projectTechnologies">
                     {technologies.map((tech, index) => (
