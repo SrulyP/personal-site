@@ -184,7 +184,6 @@ section h2 {
   font-weight: 400;
   color: var(--text-color);
 }
-
 /*  
 ==================================================
                     PROJECTS
@@ -195,14 +194,14 @@ section h2 {
   display: flex;
   flex-direction: row;
   gap: 30px;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
   align-items: flex-start;
 }
 
 .projectImg {
-  width: 310px;
-  height: 260px;
-  object-fit: cover;
+  width: 260px;
+  height: 220px;
+  object-fit: fill;
   border-radius: 15px;
   transition: transform 0.3s ease;
   flex-shrink: 0;
@@ -215,12 +214,12 @@ section h2 {
 .projectContent {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 12px;
   flex: 1;
 }
 
 .projectTitle {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 700;
   margin: 0;
   color: var(--text-color);
@@ -242,17 +241,18 @@ section h2 {
   line-height: 1.6;
   margin: 0;
   color: var(--text-color);
+  max-width: 40ch;
 }
 
 .projectTechnologies {
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 .techTag {
-  font-size: 1.1rem;
+  font-size: 1.05rem;
   font-weight: 700;
   color: var(--text-color);
 }
