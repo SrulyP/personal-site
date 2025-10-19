@@ -8,13 +8,7 @@ import resumeIcon from '../assets/resume.svg';
 function Contact() {
     return (
         <section id="contact" className="contactSection">
-            <h2>Contact</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque,
-                quia?
-            </p>
-
-            <h3 className="contactSubtitle">Lorem Ipsum</h3>
+            <h3 className="contactTitle">Lorem Ipsum</h3>
             <p className="contactDescription">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incidididunt ut labore et dolore magna
