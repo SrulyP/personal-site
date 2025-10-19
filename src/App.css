@@ -3,6 +3,7 @@
   --dark-yellow: #ffdf5d;
   --button-shadow: #938d74;
   --text-color: #272622;
+  --hover-text: #605f56;
   --active-text: rgb(134, 137, 90);
 }
 
@@ -135,6 +136,11 @@ img {
   color: var(--text-color);
 }
 
+.projectCard:last-child {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
 .aboutMe h2 {
   margin: 0;
 }
@@ -218,6 +224,17 @@ section h2 {
   font-weight: 700;
   margin: 0;
   color: var(--text-color);
+  text-decoration: none;
+}
+
+.projectTitle:hover {
+  color: var(--hover-text);
+  transition: color 0.2s ease;
+}
+
+.projectTitle:active {
+  color: var(--active-text);
+  transition: color 0.2s ease;
 }
 
 .projectDesc {
@@ -284,7 +301,13 @@ section h2 {
 }
 
 .linkItem:hover {
+  color: var(--hover-text);
+  transition: color 0.2s ease;
+}
+
+.linkItem:active {
   color: var(--active-text);
+  transition: color 0.2s ease;
 }
 
 .linkItem img {
