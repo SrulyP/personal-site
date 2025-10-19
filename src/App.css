@@ -378,3 +378,63 @@ textarea::placeholder {
   transform: translateY(3px);
   box-shadow: none;
 }
+
+/*  
+==================================================
+                    FOOTER
+==================================================
+*/
+
+.footerSection {
+  background-color: var(--dark-yellow);
+  padding: 40px 50px;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 25px;
+}
+
+.inTouch {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  row-gap: 15px;
+  column-gap: 120px;
+  width: fit-content;
+  align-items: start;
+}
+
+.inTouchTitle {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-color);
+  margin: 0;
+  grid-row: 1;
+  grid-column: 1;
+  align-self: flex-start;
+}
+
+.inTouch a {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-color);
+  text-decoration: none;
+  display: inline-block;
+  width: fit-content;
+  transition: color 0.2s ease;
+}
+
+.inTouch a:hover {
+  color: var(--hover-text);
+}
+
+.inTouch a:active {
+  color: var(--active-text);
+}
+
+.copyright {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 400;
+  margin-top: 10px;
+}
