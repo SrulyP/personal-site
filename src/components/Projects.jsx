@@ -31,37 +31,37 @@ function Projects() {
                 src={battlefield}
                 link="https://github.com/SrulyP/battleship"
                 projectTitle="Battlefield"
-                projectDesc="A JavaScript implementation of the classic Battleship game. Users can drag and drop ships onto a setup grid and then play against a computer opponent with turn-based attacks. The game displays hits, misses, and sunk ships. The project reinforced my knowledge of unit testing, using Jest to test core functionality like ship placement, attacks, and sinking mechanics."
+                projectDesc="A JavaScript implementation of the classic Battleship game. Users can drag and drop ships onto a setup grid and then play against a computer opponent with turn-based attacks. The game displays hits, misses, and sunk ships."
                 technologies={['JavaScript', 'HTML', 'CSS', 'Jest']}
                 livePreviewLink="https://srulyp.github.io/battleship/"
-                learnings="Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. Totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo."
+                learnings="The project reinforced my knowledge of unit testing, using Jest to test core functionality like ship placement, attacks, and sinking mechanics."
             />
             <ProjectCard
                 src={weather}
                 link="https://github.com/SrulyP/weather-app"
                 projectTitle="Weather App"
-                projectDesc="A responsive JavaScript app that displays real-time weather data for any city using the Visual Crossing API. Users can search for locations, toggle between Fahrenheit and Celsius, and view multi-day forecasts with dynamic weather icons. The project improved my understanding of asynchronous programming, API integration, and data rendering in the DOM."
+                projectDesc="A responsive JavaScript app that displays real-time weather data for any city using the Visual Crossing API. Users can search for locations, toggle between Fahrenheit and Celsius, and view multi-day forecasts with dynamic weather icons."
                 technologies={['JavaScript', 'HTML', 'CSS', 'API']}
                 livePreviewLink="https://srulyp.github.io/weather-app/"
-                learnings="Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque porro quisquam est."
+                learnings="The project improved my understanding of asynchronous programming, API integration, and data rendering in the DOM."
             />
             <ProjectCard
                 src={todo}
                 link="https://github.com/SrulyP/to-do-list"
                 projectTitle="To-Do App"
-                projectDesc="An interactive JavaScript app for organizing tasks and projects. Users can create projects, add tasks with priorities and due dates, and have all their data saved automatically using localStorage. The project helped me practice modular architecture, factory functions, and dynamic UI rendering."
+                projectDesc="An interactive JavaScript app for organizing tasks and projects. Users can create projects, add tasks with priorities and due dates, and have all their data saved automatically using localStorage."
                 technologies={['JavaScript', 'HTML', 'CSS', 'localStorage']}
                 livePreviewLink="https://srulyp.github.io/to-do-list/"
-                learnings="At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident."
+                learnings="The project helped me practice modular architecture, factory functions, and dynamic UI rendering."
             />
             <ProjectCard
                 src={library}
                 link="https://github.com/SrulyP/library-project"
                 projectTitle="Library App"
-                projectDesc="A dynamic JavaScript app for managing and tracking a personal book collection. Users can add, edit, and remove books, mark them as read or unread, and have their data saved automatically using localStorage. The project strengthened my understanding of object-oriented programming, DOM manipulation, and state management."
+                projectDesc="A dynamic JavaScript app for managing and tracking a personal book collection. Users can add, edit, and remove books, mark them as read or unread, and have their data saved automatically using localStorage. "
                 technologies={['JavaScript', 'HTML', 'CSS', 'localStorage']}
                 livePreviewLink="https://srulyp.github.io/library-project/"
-                learnings="Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio nam libero tempore."
+                learnings="The project strengthened my understanding of object-oriented programming, DOM manipulation, and state management."
             />
         </section>
     );
