@@ -1,4 +1,11 @@
-function ProjectCard({ src, link, projectTitle, projectDesc, technologies }) {
+function ProjectCard({
+    src,
+    link,
+    livePreviewLink,
+    projectTitle,
+    projectDesc,
+    technologies,
+}) {
     return (
         <div className="projectCard">
             <a href={link} target="_blank" rel="noopener noreferrer">
@@ -25,6 +32,16 @@ function ProjectCard({ src, link, projectTitle, projectDesc, technologies }) {
                         </span>
                     ))}
                 </div>
+                {livePreviewLink && (
+                    <a
+                        href={livePreviewLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="livePreviewBtn"
+                    >
+                        Live Preview
+                    </a>
+                )}
             </div>
         </div>
     );
