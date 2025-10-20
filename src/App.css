@@ -136,11 +136,6 @@ img {
   color: var(--text-color);
 }
 
-.projectCard:last-child {
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
 .aboutMe h2 {
   margin: 0;
 }
