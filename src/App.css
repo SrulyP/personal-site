@@ -362,18 +362,12 @@ section h2 {
   line-height: 1.6;
 }
 
-.contactTitle {
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 0.3rem;
-  margin-top: 40px;
-}
-
 .contactDescription {
   font-size: 1rem;
   line-height: 1.5;
   margin-bottom: 1.5rem;
   max-width: 600px;
+  margin-top: 0;
 }
 
 .contactLinks {
@@ -385,13 +379,14 @@ section h2 {
 }
 
 .linkItem {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 12px;
   font-size: 1rem;
   font-weight: 500;
   color: var(--text-color);
   text-decoration: none;
+  width: fit-content;
 }
 
 .linkItem:hover {
