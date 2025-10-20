@@ -13,7 +13,7 @@ function Skills() {
         'English - Native',
         'Yiddish - Native',
         'Spanish - Fluent',
-        'Hebrew - Proficient',
+        'Hebrew - Fluent',
     ];
 
     return (
