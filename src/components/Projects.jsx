@@ -15,43 +15,47 @@ function Projects() {
                 src={thisSite}
                 link="https://github.com/SrulyP/personal-site"
                 projectTitle="Personal Site"
-                projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+                projectDesc="My personal portfolio built with React and Vite to showcase my projects and skills. Features modular components and interactive project cards. Building this site helped me practice React component architecture and props handling."
                 technologies={['React', 'Vite', 'JSX', 'CSS']}
             />
             <ProjectCard
                 src={smallsh}
                 link="https://github.com/SrulyP/smallsh"
                 projectTitle="Smallsh"
-                projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+                projectDesc="A custom UNIX-based shell that supports built-in commands (cd, status, exit), execution of external commands via the environment path and the exec family, foreground/background process management, input/output redirection, and a foreground-only mode toggled by SIGTSTP (Ctrl - Z)."
                 technologies={['C', 'Linux', 'System Programming']}
             />
             <ProjectCard
                 src={battlefield}
                 link="https://github.com/SrulyP/battleship"
                 projectTitle="Battlefield"
-                projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
-                technologies={['JavaScript', 'HTML', 'CSS']}
+                projectDesc="A JavaScript implementation of the classic Battleship game. Users can drag and drop ships onto a setup grid and then play against a computer opponent with turn-based attacks. The game displays hits, misses, and sunk ships. The project reinforced my knowledge of unit testing, using Jest to test core functionality like ship placement, attacks, and sinking mechanics."
+                technologies={['JavaScript', 'HTML', 'CSS', 'Jest']}
+                livePreviewLink="https://srulyp.github.io/battleship/"
             />
             <ProjectCard
                 src={weather}
                 link="https://github.com/SrulyP/weather-app"
                 projectTitle="Weather App"
-                projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+                projectDesc="A responsive JavaScript app that displays real-time weather data for any city using the Visual Crossing API. Users can search for locations, toggle between Fahrenheit and Celsius, and view multi-day forecasts with dynamic weather icons. The project improved my understanding of asynchronous programming, API integration, and data rendering in the DOM."
                 technologies={['JavaScript', 'HTML', 'CSS', 'API']}
+                livePreviewLink="https://srulyp.github.io/weather-app/"
             />
             <ProjectCard
                 src={todo}
                 link="https://github.com/SrulyP/to-do-list"
                 projectTitle="To-Do App"
-                projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+                projectDesc="An interactive JavaScript app for organizing tasks and projects. Users can create projects, add tasks with priorities and due dates, and have all their data saved automatically using localStorage. The project helped me practice modular architecture, factory functions, and dynamic UI rendering."
                 technologies={['JavaScript', 'HTML', 'CSS', 'localStorage']}
+                livePreviewLink="https://srulyp.github.io/to-do-list/"
             />
             <ProjectCard
                 src={library}
                 link="https://github.com/SrulyP/library-project"
                 projectTitle="Library App"
-                projectDesc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna"
+                projectDesc="A dynamic JavaScript app for managing and tracking a personal book collection. Users can add, edit, and remove books, mark them as read or unread, and have their data saved automatically using localStorage. The project strengthened my understanding of object-oriented programming, DOM manipulation, and state management."
                 technologies={['JavaScript', 'HTML', 'CSS', 'localStorage']}
+                livePreviewLink="https://srulyp.github.io/library-project/"
             />
         </section>
     );
