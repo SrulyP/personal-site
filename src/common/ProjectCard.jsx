@@ -62,7 +62,7 @@ function ProjectCard({
                             setShowLearnings(!showLearnings);
                         }}
                     >
-                        What I learned {showLearnings ? 'ᐃ' : 'ᐁ'}
+                        What I learned
                     </button>
                 </div>
                 <div className="projectDescWrapper">
