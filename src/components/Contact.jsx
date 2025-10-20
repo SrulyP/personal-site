@@ -21,7 +21,7 @@ function Contact() {
                     target="_blank"
                 >
                     <img src={linkedinIcon} alt="linkedin icon" />
-                    <span>linkedin.com/israelpolasak</span>
+                    <span>LinkedIn.com/israelpolasak</span>
                 </a>
                 <a
                     className="linkItem"
@@ -29,7 +29,7 @@ function Contact() {
                     target="_blank"
                 >
                     <img src={githubIcon} alt="github icon" />
-                    <span>github.com/SrulyP</span>
+                    <span>GitHub.com/SrulyP</span>
                 </a>
                 <a className="linkItem" href="mailto:israelpolasak@gmail.com">
                     <img src={emailIcon} alt="email icon" />
