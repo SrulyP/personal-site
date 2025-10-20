@@ -31,17 +31,20 @@ function ProjectCard({
                             {tech}
                         </span>
                     ))}
+                    {livePreviewLink && (
+                        <>
+                            <span className="separator">•</span>
+                            <a
+                                href={livePreviewLink}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="livePreviewBtn"
+                            >
+                                Live Preview
+                            </a>
+                        </>
+                    )}
                 </div>
-                {livePreviewLink && (
-                    <a
-                        href={livePreviewLink}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="livePreviewBtn"
-                    >
-                        Live Preview
-                    </a>
-                )}
             </div>
         </div>
     );
