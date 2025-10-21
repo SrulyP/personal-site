@@ -15,9 +15,9 @@ function Projects() {
                 src={thisSite}
                 link="https://github.com/SrulyP/personal-site"
                 projectTitle="Personal Site"
-                projectDesc="My personal portfolio built with React and Vite to showcase my projects and skills. Features modular components and interactive project cards. Building this site helped me practice React component architecture and props handling."
+                projectDesc="My personal portfolio built with React and Vite to showcase my projects and skills. This site features modular components and interactive project cards, as well as a contact section."
                 technologies={['React', 'Vite', 'JSX', 'CSS']}
-                learnings="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+                learnings="Building this site helped me practice React component architecture and props handling, as well as using JSX formatting."
             />
             <ProjectCard
                 src={smallsh}
@@ -25,7 +25,7 @@ function Projects() {
                 projectTitle="Smallsh"
                 projectDesc="A custom UNIX-based shell that supports built-in commands (cd, status, exit), execution of external commands via the environment path and the exec family, foreground/background process management, input/output redirection, and a foreground-only mode toggled by SIGTSTP (Ctrl - Z)."
                 technologies={['C', 'Linux', 'System Programming']}
-                learnings="Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                learnings="This shell project deepened my understanding of process management, system calls, and signal handling in UNIX environments."
             />
             <ProjectCard
                 src={battlefield}
