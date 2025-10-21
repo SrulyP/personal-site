@@ -1,7 +1,6 @@
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import '../App.css';
-// import resume from '../assets/resume.pdf';
 import githubIcon from '../assets/github.svg';
 import linkedinIcon from '../assets/linkedin.svg';
 import emailIcon from '../assets/email.svg';

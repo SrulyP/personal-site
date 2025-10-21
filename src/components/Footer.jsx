@@ -1,5 +1,4 @@
 import '../App.css';
-// import resume from '../assets/resume.pdf';
 
 function Footer() {
     return (
