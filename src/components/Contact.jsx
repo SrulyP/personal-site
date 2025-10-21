@@ -68,7 +68,7 @@ function Contact() {
                 </a>
             </div>
 
-            <h3 className="leaveMessageTitle">Leave Message</h3>
+            <h3 className="leaveMessageTitle">Leave a Message</h3>
             <form ref={form} onSubmit={sendEmail} className="contactForm">
                 <div className="formRowShort">
                     <input
