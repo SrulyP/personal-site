@@ -535,3 +535,281 @@ textarea::placeholder {
   font-weight: 400;
   margin-top: 10px;
 }
+
+/*  
+==================================================
+                RESPONSIVE DESIGN
+==================================================
+*/
+
+/* 1200px and below */
+@media (max-width: 1200px) {
+  .info,
+  .skillsSection,
+  .projectsSection,
+  .contactSection {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  .skillsGrid {
+    gap: 40px;
+  }
+
+  .projectImg {
+    width: 220px;
+    height: 180px;
+  }
+}
+
+/* 900px and below */
+@media (max-width: 900px) {
+  .headerSection {
+    padding: 10px 30px;
+    margin-bottom: 60px;
+  }
+
+  .headerSection p {
+    font-size: 1.1rem;
+  }
+
+  .headerSection a {
+    font-size: 1.1rem;
+  }
+
+  .info,
+  .skillsSection,
+  .projectsSection,
+  .contactSection {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .introduction {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .hero {
+    max-height: 200px;
+  }
+
+  .heroSection h1 {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+  }
+
+  .aboutMeDescription {
+    font-size: 1rem;
+    line-height: 1.8rem;
+  }
+
+  .skillsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .projectCard {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .projectImg {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    object-fit: cover;
+  }
+
+  .projectHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .projectDesc {
+    max-width: 100%;
+  }
+
+  .projectFooter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .livePreviewBtn {
+    align-self: flex-start;
+  }
+
+  .contactLinks {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .inTouch {
+    grid-template-columns: 1fr;
+    column-gap: 0;
+  }
+
+  .footerSection {
+    padding: 30px 40px;
+    margin-top: 60px;
+  }
+}
+
+/* 600px and below */
+@media (max-width: 600px) {
+  .headerSection {
+    padding: 10px 20px;
+    margin-bottom: 40px;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .headerSection p {
+    font-size: 1rem;
+  }
+
+  .links {
+    gap: 1.5rem;
+  }
+
+  .headerSection a {
+    font-size: 1rem;
+  }
+
+  .info,
+  .skillsSection,
+  .projectsSection,
+  .contactSection {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .hero {
+    max-height: 150px;
+  }
+
+  .heroSection h1 {
+    font-size: 1.5rem;
+  }
+
+  .description {
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+  }
+
+  .aboutMeDescription {
+    font-size: 0.95rem;
+    line-height: 1.6rem;
+  }
+
+  section h1,
+  section h2 {
+    font-size: 1.5rem;
+  }
+
+  .skillsGrid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+    margin-bottom: 30px;
+  }
+
+  .skillCategory h3 {
+    font-size: 1.2rem;
+  }
+
+  .skillsList li {
+    font-size: 1rem;
+  }
+
+  .projectTitle {
+    font-size: 1.3rem;
+  }
+
+  .whatILearnedBtn {
+    font-size: 0.9rem;
+    padding: 6px 16px;
+  }
+
+  .projectDesc {
+    font-size: 1rem;
+  }
+
+  .learningsPopup {
+    font-size: 1rem;
+    padding: 12px 15px;
+  }
+
+  .techTag {
+    font-size: 0.95rem;
+  }
+
+  .livePreviewBtn {
+    font-size: 0.95rem;
+    padding: 10px 28px;
+  }
+
+  .contactDescription {
+    font-size: 0.95rem;
+  }
+
+  .linkItem {
+    font-size: 0.95rem;
+  }
+
+  .linkItem img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .leaveMessageTitle {
+    font-size: 1.2rem;
+  }
+
+  .formRowShort {
+    flex-direction: column;
+  }
+
+  .formRowShort input,
+  .formRowLong input,
+  .formRowLong textarea {
+    font-size: 0.95rem;
+    padding: 12px 15px;
+  }
+
+  textarea {
+    min-height: 150px;
+  }
+
+  .submitBtn {
+    font-size: 0.95rem;
+    padding: 10px 28px;
+    align-self: stretch;
+  }
+
+  .footerSection {
+    padding: 25px 20px;
+    margin-top: 40px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+  }
+
+  .inTouchTitle {
+    font-size: 1.2rem;
+  }
+
+  .inTouch a {
+    font-size: 0.95rem;
+  }
+
+  .copyright {
+    font-size: 0.9rem;
+  }
+}
