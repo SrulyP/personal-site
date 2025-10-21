@@ -1,7 +1,7 @@
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
 import '../App.css';
-import resume from '../assets/resume.pdf';
+// import resume from '../assets/resume.pdf';
 import githubIcon from '../assets/github.svg';
 import linkedinIcon from '../assets/linkedin.svg';
 import emailIcon from '../assets/email.svg';
@@ -62,7 +62,7 @@ function Contact() {
                     <img src={emailIcon} alt="email icon" />
                     <span>israelpolasak@gmail.com</span>
                 </a>
-                <a className="linkItem" href={resume}>
+                <a className="linkItem" href="/resume.pdf">
                     <img src={resumeIcon} alt="resume icon" />
                     <span>Resume</span>
                 </a>

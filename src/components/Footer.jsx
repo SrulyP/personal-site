@@ -1,5 +1,5 @@
 import '../App.css';
-import resume from '../assets/resume.pdf';
+// import resume from '../assets/resume.pdf';
 
 function Footer() {
     return (
@@ -21,7 +21,7 @@ function Footer() {
                 >
                     GitHub
                 </a>
-                <a href={resume} target="_blank">
+                <a href="/resume.pdf" target="_blank">
                     Resume
                 </a>
             </div>
