@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+import emailjs from 'emailjs-com';
 import '../App.css';
 import resume from '../assets/resume.pdf';
 import githubIcon from '../assets/github.svg';
@@ -6,12 +8,37 @@ import emailIcon from '../assets/email.svg';
 import resumeIcon from '../assets/resume.svg';
 
 function Contact() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs
+            .sendForm(
+                import.meta.env.VITE_EMAILJS_SERVICE_ID,
+                import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+                form.current,
+                import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+            )
+            .then(
+                (result) => {
+                    console.log(result.text);
+                    alert('Message sent successfully!');
+                    e.target.reset();
+                },
+                (error) => {
+                    console.log(error.text);
+                    alert('Failed to send message. Please try again.');
+                }
+            );
+    };
+
     return (
         <section id="contact" className="contactSection">
-            <h3 className="contactTitle">Lorem Ipsum</h3>
+            <h2 className="contactTitle">Get in Contact</h2>
             <p className="contactDescription">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                eiusmod tempor incidididunt ut labore et dolore magna
+                Currently seeking new opportunities. Let's connect to discuss
+                how my skills align with your team's needs!
             </p>
 
             <div className="contactLinks">
@@ -42,7 +69,7 @@ function Contact() {
             </div>
 
             <h3 className="leaveMessageTitle">Leave Message</h3>
-            <div className="contactForm">
+            <form ref={form} onSubmit={sendEmail} className="contactForm">
                 <div className="formRowShort">
                     <input
                         type="text"
@@ -76,8 +103,10 @@ function Contact() {
                         required
                     ></textarea>
                 </div>
-                <button className="submitBtn">Send</button>
-            </div>
+                <button type="submit" className="submitBtn">
+                    Send
+                </button>
+            </form>
         </section>
     );
 }
