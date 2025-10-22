@@ -5,8 +5,11 @@ import githubIcon from '../assets/github.svg';
 import linkedinIcon from '../assets/linkedin.svg';
 import emailIcon from '../assets/email.svg';
 import resumeIcon from '../assets/resume.svg';
+import { useTranslation } from 'react-i18next';
 
 function Contact() {
+    const { t } = useTranslation();
+
     const form = useRef();
 
     const sendEmail = (e) => {
@@ -22,23 +25,20 @@ function Contact() {
             .then(
                 (result) => {
                     console.log(result.text);
-                    alert('Message sent successfully!');
+                    alert(t('contact.alerts.success'));
                     e.target.reset();
                 },
                 (error) => {
                     console.log(error.text);
-                    alert('Failed to send message. Please try again.');
+                    alert(t('contact.alerts.failure'));
                 }
             );
     };
 
     return (
         <section id="contact" className="contactSection">
-            <h2 className="contactTitle">Get in Contact</h2>
-            <p className="contactDescription">
-                Currently seeking new opportunities. Let's connect to discuss
-                how my skills align with your team's needs!
-            </p>
+            <h2 className="contactTitle">{t('contact.title')}</h2>
+            <p className="contactDescription">{t('contact.description')}</p>
 
             <div className="contactLinks">
                 <a
@@ -63,25 +63,25 @@ function Contact() {
                 </a>
                 <a className="linkItem" href="/resume.pdf">
                     <img src={resumeIcon} alt="resume icon" />
-                    <span>Resume</span>
+                    <span>{t('contact.links.resume')}</span>
                 </a>
             </div>
 
-            <h3 className="leaveMessageTitle">Leave a Message</h3>
+            <h3 className="leaveMessageTitle">{t('contact.form.title')}</h3>
             <form ref={form} onSubmit={sendEmail} className="contactForm">
                 <div className="formRowShort">
                     <input
                         type="text"
                         name="name"
                         id="name"
-                        placeholder="Name:"
+                        placeholder={t('contact.form.name')}
                         required
                     />
                     <input
                         type="email"
                         name="email"
                         id="email"
-                        placeholder="Email:"
+                        placeholder={t('contact.form.email')}
                         required
                     />
                 </div>
@@ -90,7 +90,7 @@ function Contact() {
                         type="text"
                         name="subject"
                         id="subject"
-                        placeholder="Subject:"
+                        placeholder={t('contact.form.subject')}
                         required
                     />
                 </div>
@@ -98,12 +98,12 @@ function Contact() {
                     <textarea
                         name="message"
                         id="message"
-                        placeholder="Message:"
+                        placeholder={t('contact.form.message')}
                         required
                     ></textarea>
                 </div>
                 <button type="submit" className="submitBtn">
-                    Send
+                    {t('contact.form.send')}
                 </button>
             </form>
         </section>

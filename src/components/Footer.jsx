@@ -1,32 +1,37 @@
 import '../App.css';
+import { useTranslation } from 'react-i18next';
 
 function Footer() {
+    const { t } = useTranslation();
+
     return (
         <section className="footerSection">
-            <h3 className="inTouchTitle">Get In Touch</h3>
+            <h3 className="inTouchTitle">{t('footer.title')}</h3>
             <div className="inTouch">
-                <a href="mailto:israelpolasak@gmail.com">Email</a>
+                <a href="mailto:israelpolasak@gmail.com">
+                    {t('footer.links.email')}
+                </a>
                 <a
                     href="https://linkedin.com/in/israelpolasak"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    LinkedIn
+                    {t('footer.links.linkedin')}
                 </a>
                 <a
                     href="https://github.com/SrulyP"
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    GitHub
+                    {t('footer.links.github')}
                 </a>
                 <a href="/resume.pdf" target="_blank">
-                    Resume
+                    {t('footer.links.resume')}
                 </a>
             </div>
             <div className="copyright">
-                &copy; {new Date().getFullYear()} Israel Polasak | All rights
-                reserved.
+                &copy; {new Date().getFullYear()} {t('footer.name')} |{' '}
+                {t('footer.copyright')}
             </div>
         </section>
     );
