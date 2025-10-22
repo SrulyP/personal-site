@@ -1,28 +1,24 @@
 import '../App.css';
+import { useTranslation } from 'react-i18next';
 
 function Skills() {
-    const codingLanguages = [
-        'Python',
-        'JavaScript',
-        'C',
-        'x86 Assembly',
-        'SQL',
-    ];
-    const tools = ['React', 'Flask', 'HTML', 'CSS', 'Git', 'Github'];
-    const naturalLanguages = [
-        'English - Native',
-        'Yiddish - Native',
-        'Spanish - Fluent',
-        'Hebrew - Fluent',
-    ];
+    const { t } = useTranslation();
+
+    const codingLanguages = t('skills.codingLanguages', {
+        returnObjects: true,
+    });
+    const tools = t('skills.tools', { returnObjects: true });
+    const naturalLanguages = t('skills.naturalLanguages', {
+        returnObjects: true,
+    });
 
     return (
         <section id="skills" className="skillsSection">
-            <h2>Areas of Expertise</h2>
+            <h2>{t('skills.title')}</h2>
 
             <div className="skillsGrid">
                 <div className="skillCategory">
-                    <h3>Coding Languages</h3>
+                    <h3>{t('skills.codingLanguagesTitle')}</h3>
                     <ul className="skillsList">
                         {codingLanguages.map((lang, index) => (
                             <li key={index}>{lang}</li>
@@ -31,7 +27,7 @@ function Skills() {
                 </div>
 
                 <div className="skillCategory">
-                    <h3>Tools</h3>
+                    <h3>{t('skills.toolsTitle')}</h3>
                     <ul className="skillsList">
                         {tools.map((tool, index) => (
                             <li key={index}>{tool}</li>
@@ -40,7 +36,7 @@ function Skills() {
                 </div>
 
                 <div className="skillCategory">
-                    <h3>Natural Languages</h3>
+                    <h3>{t('skills.naturalLanguagesTitle')}</h3>
                     <ul className="skillsList">
                         {naturalLanguages.map((lang, index) => (
                             <li key={index}>{lang}</li>
