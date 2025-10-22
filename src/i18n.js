@@ -13,11 +13,22 @@ i18n.use(initReactI18next).init({
             translation: heTranslations,
         },
     },
-    lng: 'en', // Default language
+    lng: 'en',
     fallbackLng: 'en',
     interpolation: {
         escapeValue: false,
     },
 });
+
+// Set direction based on language
+i18n.on('languageChanged', (lng) => {
+    document.documentElement.setAttribute('dir', lng === 'he' ? 'rtl' : 'ltr');
+});
+
+// Set initial direction
+document.documentElement.setAttribute(
+    'dir',
+    i18n.language === 'he' ? 'rtl' : 'ltr'
+);
 
 export default i18n;
