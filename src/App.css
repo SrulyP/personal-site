@@ -72,6 +72,30 @@ img {
   width: auto;
 }
 
+.languageToggleBtn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 450;
+  color: var(--text-color);
+  cursor: pointer;
+  transition: transform 0.2s, color 0.2s;
+  padding: 0;
+}
+
+.languageToggleBtn:hover {
+  text-decoration: underline;
+  text-underline-offset: 1.65rem;
+  text-decoration-thickness: 2px;
+  color: var(--text-color);
+  transform: scale(1.08);
+  font-weight: 550;
+}
+
+.languageToggleBtn:active {
+  color: var(--active-text);
+}
+
 /*  
 ==================================================
                     HERO
