@@ -1,8 +1,94 @@
 {
+    "header": {
+        "name": "Israel Polasak",
+        "projects": "Projects",
+        "contact": "Contact"
+    },
     "hero": {
         "greeting": "Hi, I'm Israel!",
         "description": "I'm a Computer Science graduate passionate about solving problems through code. I build full-stack applications, break down complex systems into simpler solutions, and love learning new technologies.",
         "aboutMeTitle": "About Me",
         "aboutMeDescription": "With a BS in Computer Science from Oregon State (3.95 GPA), I've developed skills across multiple programming languages and frameworks. I'm experienced in problem-solving, debugging, and collaborating on projects that range from backend systems to interactive frontend experiences. I'm interested in software roles where I can grow, contribute, and tackle challenging problems."
+    },
+    "skills": {
+        "title": "Areas of Expertise",
+        "codingLanguagesTitle": "Coding Languages",
+        "toolsTitle": "Tools",
+        "naturalLanguagesTitle": "Natural Languages",
+        "codingLanguages": ["Python", "JavaScript", "C", "x86 Assembly", "SQL"],
+        "tools": ["React", "Flask", "HTML", "CSS", "Git", "Github", "i18next"],
+        "naturalLanguages": [
+            "English - Native",
+            "Yiddish - Native",
+            "Spanish - Fluent",
+            "Hebrew - Fluent"
+        ]
+    },
+    "projects": {
+        "title": "My Projects",
+        "personalSite": {
+            "title": "Personal Site",
+            "desc": "My personal portfolio built with React and Vite to showcase my projects and skills. This site features modular components and interactive project cards, as well as a contact section.",
+            "learnings": "Building this site helped me practice React component architecture and props handling, as well as using i18next for translation. Additionally it taught me to use JSX formatting and gave me a deeper understanding of JSON usage."
+        },
+        "smallsh": {
+            "title": "Smallsh",
+            "desc": "A custom UNIX-based shell that supports built-in commands (cd, status, exit), execution of external commands via the environment path and the exec family, foreground/background process management, input/output redirection, and a foreground-only mode toggled by SIGTSTP (Ctrl - Z).",
+            "learnings": "This shell project deepened my understanding of process management, system calls, and signal handling in UNIX environments, as well as seeing behind the scenes of how the shell works."
+        },
+        "battlefield": {
+            "title": "Battlefield",
+            "desc": "A JavaScript implementation of the classic Battleship game. Users can drag and drop ships onto a setup grid and then play against a computer opponent with turn-based attacks. The game displays hits, misses, and sunk ships.",
+            "learnings": "The project reinforced my knowledge of unit testing, using Jest to test core functionality like ship placement, attacks, and sinking mechanics, as well as building my knowledge of JavaScript with features such as drag and drop."
+        },
+        "weather": {
+            "title": "Weather App",
+            "desc": "A responsive JavaScript app that displays real-time weather data for any city using the Visual Crossing API. Users can search for locations, toggle between Fahrenheit and Celsius, and view multi-day forecasts with dynamic weather icons.",
+            "learnings": "The project improved my understanding of asynchronous programming, API integration, and data rendering in the DOM."
+        },
+        "todo": {
+            "title": "To-Do App",
+            "desc": "An interactive JavaScript app for organizing tasks and projects. Users can create projects, add tasks with priorities and due dates, and have all their data saved automatically using localStorage.",
+            "learnings": "The project helped me practice modular architecture, factory functions, and dynamic UI rendering, as well as object-oriented programming."
+        },
+        "library": {
+            "title": "Library App",
+            "desc": "A dynamic JavaScript app for managing and tracking a personal book collection. Users can add, edit, and remove books, mark them as read or unread, and have their data saved automatically using localStorage.",
+            "learnings": "The project strengthened my understanding of object-oriented programming, DOM manipulation, and state management."
+        }
+    },
+    "projectCard": {
+        "whatILearned": "What I learned",
+        "livePreview": "Live Preview"
+    },
+    "contact": {
+        "title": "Get in Contact",
+        "description": "Currently seeking new opportunities. Let's connect to discuss how my skills align with your team's needs!",
+        "links": {
+            "resume": "Resume"
+        },
+        "form": {
+            "title": "Leave a Message",
+            "name": "Name:",
+            "email": "Email:",
+            "subject": "Subject:",
+            "message": "Message:",
+            "send": "Send"
+        },
+        "alerts": {
+            "success": "Message sent successfully!",
+            "failure": "Failed to send message. Please try again."
+        }
+    },
+    "footer": {
+        "title": "Get In Touch",
+        "links": {
+            "email": "Email",
+            "linkedin": "LinkedIn",
+            "github": "GitHub",
+            "resume": "Resume"
+        },
+        "copyright": "All rights reserved.",
+        "name": "Israel Polasak"
     }
 }
