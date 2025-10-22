@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from 'react';
+import { useTranslation } from 'react-i18next';
 
 function ProjectCard({
     src,
@@ -9,6 +10,7 @@ function ProjectCard({
     technologies,
     learnings,
 }) {
+    const { t } = useTranslation();
     const [showLearnings, setShowLearnings] = useState(false);
     const popupRef = useRef(null);
     const buttonRef = useRef(null);
@@ -62,7 +64,7 @@ function ProjectCard({
                             setShowLearnings(!showLearnings);
                         }}
                     >
-                        What I learned
+                        {t('projectCard.whatILearned')}
                     </button>
                 </div>
                 <div className="projectDescWrapper">
@@ -88,7 +90,7 @@ function ProjectCard({
                             rel="noopener noreferrer"
                             className="livePreviewBtn"
                         >
-                            Live Preview
+                            {t('projectCard.livePreview')}
                         </a>
                     )}
                 </div>
