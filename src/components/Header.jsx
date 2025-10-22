@@ -15,7 +15,7 @@ function Header() {
             <div className="links">
                 <a href="#projects">{t('header.projects')}</a>
                 <a href="#contact">{t('header.contact')}</a>
-                <button onClick={toggleLanguage}>
+                <button onClick={toggleLanguage} className="languageToggleBtn">
                     {i18n.language === 'en' ? 'עברית' : 'English'}
                 </button>
             </div>
