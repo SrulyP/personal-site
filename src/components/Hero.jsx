@@ -1,7 +1,10 @@
 import '../App.css';
 import heroImg from '../assets/heroImg.jpg';
+import { useTranslation } from 'react-i18next';
 
 function Hero() {
+    const { t } = useTranslation();
+
     return (
         <section id="hero" className="heroSection">
             <div className="info">
@@ -12,27 +15,14 @@ function Hero() {
                         alt="Profile picture of Israel Polasak"
                     />
                     <div>
-                        <h1>Hi, I'm Israel!</h1>
-                        <p className="description">
-                            I'm a Computer Science graduate passionate about
-                            solving problems through code. I build full-stack
-                            applications, break down complex systems into
-                            simpler solutions, and love learning new
-                            technologies.
-                        </p>
+                        <h1>{t('hero.greeting')}</h1>
+                        <p className="description">{t('hero.description')}</p>
                     </div>
                 </div>
                 <div className="aboutMe">
-                    <h2>About Me</h2>
+                    <h2>{t('hero.aboutMeTitle')}</h2>
                     <p className="aboutMeDescription">
-                        With a BS in Computer Science from Oregon State (3.95
-                        GPA), I've developed skills across multiple programming
-                        languages and frameworks. I'm experienced in
-                        problem-solving, debugging, and collaborating on
-                        projects that range from backend systems to interactive
-                        frontend experiences. I'm interested in software roles
-                        where I can grow, contribute, and tackle challenging
-                        problems.
+                        {t('hero.aboutMeDescription')}
                     </p>
                 </div>
             </div>
